@@ -46,6 +46,7 @@ a {
 .cabecalho__titulo {
     font-size: 1.2rem;
     text-align: center;
+    color: #396367
 }
 
 .navegacao__lista {
@@ -54,6 +55,7 @@ a {
 
 .navegacao__elemento a {
     font-size: 0.9rem;
+    color: #2b4b4e
 }
 
 /* ------------------------------ Seção Apresentação ------------------------------*/
@@ -99,33 +101,37 @@ a {
 }
 
 /*------------------------------ Seção de Habilidades ------------------------------*/
-.habilidades {
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.habilidades,
+.hobbies {
     width: 1136px;
     height: 244px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
-.habilidades__lista {
+.habilidades__lista,
+.hobbies__lista {
     display: flex;
 }
 
-.habilidades__elemento {
+.habilidades__elemento,
+.hobbies__elemento {
     display: flex;
     width: 176px;
-    height: 174px;
+    height: 94px;
     padding: 16px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 8px;
 }
 
 .habilidades__icone {
     color: #2A7AE4;
+    width: 32px;
     text-align: center;
     font-family: "Font Awesome 5 Brands";
     font-size: 32px;
@@ -144,12 +150,87 @@ a {
     line-height: normal;
 }
 
-/*------------------------------ Seção de Hobbies --------------------------------*/
+/*------------------------------ Seção de Formação Academica --------------------------------*/
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 150px;
+}
 
+.formacao__lista {
+    display: flex;
+    gap: 100px;
+}
 
-/*------------------------------ Seção de Projetos --------------------------------*/
+.formacao__icone {
+    width: 40px;
+}
 
+.img-alura {
+    width: 40px;
+}
 
+/*------------------------------ Experiência Profissional ---------------------------------*/
+.projetos {
+    width: 1136px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.projeto-container {
+    display: flex;
+    gap: 80px;
+}
+
+.projetos__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.projetos__jogoSecreto, h3,
+p {
+    margin: 4px;
+    text-align: center;
+}
+
+.projeto__jogoSecreto--img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+.projeto__jogoSecreto--button {
+    width: 164px;
+    height: 35px;
+    border: 1px solid;
+    background-color: #20003F;
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 10px;
+    color: azure;
+}
+
+.projeto__jogoSecreto--button:nth-child(2){
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+}
+
+.projeto__jogoSecreto--assets{
+    width: 20px;
+}
+
+.projetos__jogoSecreto--links {
+    width: 550px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
 /*------------------------------ Seção de Contato ---------------------------------*/
 
 
