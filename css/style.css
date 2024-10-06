@@ -6,26 +6,31 @@
 }
 
 body {
-    background-color: var(--cor-de-fundo);
+    background-color: rgb(37, 35, 35);
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+    /*color: #e8c368;*/
 }
 
 ol,
 ul,
 li {
     list-style: none;
+    text-align: center
 }
 
 a {
     text-decoration: none;
-    color: var(--cor-do-link);
+    color: #c7e02e;
 }
 
 /* ------------------------------ Seção Menu -------------------------------*/
+p {
+    color: #a8a2a2;
+}
 
 .cabecalho {
     width: 1136px;
@@ -33,7 +38,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-color: var(--cor-de-fundo-menu);
+    background-color: #252323;
     margin: auto;
 }
 
@@ -46,7 +51,7 @@ a {
 .cabecalho__titulo {
     font-size: 1.2rem;
     text-align: center;
-    color: #396367
+    color: #c7e02e;
 }
 
 .navegacao__lista {
@@ -55,10 +60,15 @@ a {
 
 .navegacao__elemento a {
     font-size: 0.9rem;
-    color: #2b4b4e
+    color: #c7e02e
 }
 
 /* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao__titulo {
+    color: #a2ab6b9c;
+    text-align: left;
+}
+
 .apresentacao {
     width: 1136px;
     height: 368px;
@@ -67,11 +77,14 @@ a {
     gap: 32px;
     margin: auto;
     margin-top: 32px;
+    border-radius: 316px;
+    /* background-color: #b7b7b71e; */
+    /* border-radius: 15px 15px 15px 15px; */
 }
 
 .apresentacao__foto {
     border-radius: 500px;
-    border: 1px solid rgb(192, 183, 183);
+    border: 1px solid #c7e02e47;
 }
 
 .redes {
@@ -92,8 +105,15 @@ a {
     margin: auto;
 }
 
-.sobre-mim__titulo {
-    margin-top: -10px;
+.sobre-mim__titulo,
+.habilidades__titulo,
+.hobbies__titulo,
+.formacao__titulo,
+.projetos__titulo,
+.contato__titulo,
+.formacao__ {
+    color: #c7e02ea8;
+    opacity: 50%;
 }
 
 .sobre-mim__texto {
@@ -111,11 +131,15 @@ a {
     align-items: center;
     margin: auto;
     margin-top: 110px;
+    background-color: #b7b7b71e;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .habilidades__lista,
 .hobbies__lista {
     display: flex;
+    width: 1136px;
+    justify-content: space-between;
 }
 
 .habilidades__elemento,
@@ -142,7 +166,7 @@ a {
 
 .habilidades__nome {
     align-self: stretch;
-    color: var(--preto-100, #464646);
+    color: var(--preto-100, #f7f5f5);
     font-family: Raleway;
     font-size: 16px;
     font-style: normal;
@@ -155,13 +179,27 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
     margin-top: 150px;
+    width: 1136px;
+    margin: auto;
+    background-color: #b7b7b71e;
+    border-radius: 15px 15px 15px 15px;
+    gap: 38px;
+    margin-top: 62px;
+}
+
+.formacao__nome {
+    color: #f0f3f3;
+}
+
+.formacao__detalhe {
+    color: #7B7B7B;
 }
 
 .formacao__lista {
     display: flex;
     gap: 100px;
+    padding-left: 0px;
 }
 
 .formacao__icone {
@@ -180,9 +218,19 @@ a {
     margin: auto;
 }
 
-.projeto-container {
+
+.projeto__formulario {
+    color: #f0f3f3;
+}
+
+.projeto-container1,
+.projeto-container2 {
     display: flex;
     gap: 80px;
+    margin-bottom: 100px;
+    background-color: #b7b7b71e;
+    border-radius: 15px 15px 15px 15px;
+    height: 480px;
 }
 
 .projetos__titulo {
@@ -192,48 +240,100 @@ a {
     margin-top: 100px;
 }
 
-.projetos__jogoSecreto, h3,
-p {
+.projetos__jogoSecreto h3 {
     margin: 4px;
-    text-align: center;
+    text-align: left;
+    color: #a39e9e;
 }
 
 .projeto__jogoSecreto--img {
-    width: 550px;
+    width: 498px;
     border-radius: 10px;
+    border: 2px solid #c7e02e;
+    margin-left: 18px;
 }
 
 .projeto__jogoSecreto--button {
     width: 164px;
     height: 35px;
     border: 1px solid;
-    background-color: #20003F;
+    background-color: #c7e02e;
     padding-top: 7px;
     text-align: center;
     border-radius: 10px;
-    color: azure;
+    color: #111111;
 }
 
-.projeto__jogoSecreto--button:nth-child(2){
-    background-color: white;
+.cor-botao--filho {
     color: #000000;
     font-weight: bold;
 }
 
-.projeto__jogoSecreto--assets{
+.projeto__jogoSecreto--assets {
     width: 20px;
 }
 
 .projetos__jogoSecreto--links {
-    width: 550px;
+    width: 498px;
     display: flex;
     gap: 15px;
     flex-direction: row;
     justify-content: center;
 }
+
+.projetos__jogoSecreto,
+.projetos__formulario {
+    color: aliceblue;
+    text-align: center;
+}
+
+.p-formulario {
+    text-align: center;
+}
+
 /*------------------------------ Seção de Contato ---------------------------------*/
+.contato {
+    width: 1136px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #7B7B7B;
+    gap: 148px;
+    margin: auto;
+}
 
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
+}
+
+.contato__formulario--grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contato__campo {
+    height: 50px;
+    width: 600px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contato__botao{
+    width: 600px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #c7e02e;
+}
+.telefone-contato{
+    width: 50px;
+    height: 50px;
+}
 /* ------------------------------ Responsividade ---------------------------------------*/
 
 /* Tablets e telas maiores */
