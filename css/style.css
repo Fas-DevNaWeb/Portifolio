@@ -6,13 +6,13 @@
 }
 
 body {
-    background-color: rgb(37, 35, 35);
+    background-color: rgb(22, 22, 22);
+    background-color: write;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
-    /*color: #e8c368;*/
 }
 
 ol,
@@ -24,7 +24,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #c7e02e;
+    color: #22d63a;
 }
 
 /* ------------------------------ Seção Menu -------------------------------*/
@@ -32,14 +32,71 @@ p {
     color: #a8a2a2;
 }
 
+.f {
+    color: #c7e02e;
+}
+
+.a {
+    color: #bd6a32;
+}
+
+.b {
+    color: #22d63a;
+}
+
+.i {
+    color: #bd3273;
+}
+
+.c {
+    color: #7B7B7B
+}
+
+.n {
+    color: #2A7AE4;
+}
+
+.o {
+    color: #d622d6;
+}
+
+h4 {
+    color: #e8c368;
+}
+
+.l:hover {
+    color: #bd6a32;
+}
+
+.m:hover {
+    color: #1ad4bc;
+}
+
+.p:hover {
+    color: #ee1794;
+}
+
+.y:hover {
+    color: #d4c92c;
+}
+
+.z:hover {
+    color: #1a26d4;
+}
+
+.q:hover {
+    color: #e03d3d;
+}
+
 .cabecalho {
     width: 1136px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1rem;
-    background-color: #252323;
+    background-color: write;
     margin: auto;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cabecalho__logo {
@@ -51,40 +108,43 @@ p {
 .cabecalho__titulo {
     font-size: 1.2rem;
     text-align: center;
-    color: #c7e02e;
+    color: #f8f8f4;
 }
 
 .navegacao__lista {
-    display: none;
+    display: flex;
+    gap: 15px;
 }
 
 .navegacao__elemento a {
     font-size: 0.9rem;
-    color: #c7e02e
+    color: #fcfcf8
 }
 
 /* ------------------------------ Seção Apresentação ------------------------------*/
 .apresentacao__titulo {
-    color: #a2ab6b9c;
+    color: #fffffe;
     text-align: left;
+}
+
+.apresentacao__subtitulo {
+    color: #7B7B7B;
 }
 
 .apresentacao {
     width: 1136px;
-    height: 368px;
+    height: 290px;
     display: flex;
     flex-direction: row-reverse;
     gap: 32px;
     margin: auto;
-    margin-top: 32px;
+    margin-top: 6px;
     border-radius: 316px;
-    /* background-color: #b7b7b71e; */
-    /* border-radius: 15px 15px 15px 15px; */
 }
 
 .apresentacao__foto {
     border-radius: 500px;
-    border: 1px solid #c7e02e47;
+    border: 2px solid #22d63a;
 }
 
 .redes {
@@ -101,7 +161,6 @@ p {
     width: 1136px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
     margin: auto;
 }
 
@@ -112,8 +171,7 @@ p {
 .projetos__titulo,
 .contato__titulo,
 .formacao__ {
-    color: #c7e02ea8;
-    opacity: 50%;
+    color: #c8e02e;
 }
 
 .sobre-mim__texto {
@@ -131,7 +189,7 @@ p {
     align-items: center;
     margin: auto;
     margin-top: 110px;
-    background-color: #b7b7b71e;
+    background-color: #b7b7b700;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -165,7 +223,7 @@ p {
 }
 
 .habilidades__nome {
-    align-self: stretch;
+    align-self: flex-start;
     color: var(--preto-100, #f7f5f5);
     font-family: Raleway;
     font-size: 16px;
@@ -182,7 +240,7 @@ p {
     margin-top: 150px;
     width: 1136px;
     margin: auto;
-    background-color: #b7b7b71e;
+    background-color: #b7b7b700;
     border-radius: 15px 15px 15px 15px;
     gap: 38px;
     margin-top: 62px;
@@ -228,7 +286,7 @@ p {
     display: flex;
     gap: 80px;
     margin-bottom: 100px;
-    background-color: #b7b7b71e;
+    background-color: #b7b7b700;
     border-radius: 15px 15px 15px 15px;
     height: 480px;
 }
@@ -254,7 +312,7 @@ p {
 }
 
 .projeto__jogoSecreto--button {
-    width: 164px;
+    width: 245px;
     height: 35px;
     border: 1px solid;
     background-color: #c7e02e;
@@ -291,88 +349,107 @@ p {
     text-align: center;
 }
 
+/*------------------------------ Seção de rodapé ---------------------------------*/
+.container__footer {
+    width: 1136px;
+    height: 200px;
+    margin: auto;
+}
+
+
 /*------------------------------ Seção de Contato ---------------------------------*/
 .contato {
     width: 1136px;
-    height: 400px;
+    height: 500px;
     margin: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #7B7B7B;
-    gap: 148px;
-    margin: auto;
 }
 
 .contato__formulario {
+    width: 700px;
+    height: 420px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
+    gap: 10px;
+    color: #a8a2a2;
 }
 
-.contato__formulario--grupo{
+.contato__formulario--divisao {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 25px;
 }
+
 .contato__campo {
-    height: 50px;
-    width: 600px;
+    height: 40px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: left;
 }
 
-.contato__botao{
-    width: 600px;
-    height: 50px;
-    font-size: 20px;
+.contato__campo--textarea {
+    font-size: 18px;
+}
+
+.contato__botao1 {
+    width: 300px;
+    height: 100px;
+    margin-left: 182px;
+    background-color: #C7E02E;
     font-weight: bold;
-    background-color: #c7e02e;
+    border-radius: 5px;
 }
-.telefone-contato{
-    width: 50px;
-    height: 50px;
-}
-/* ------------------------------ Responsividade ---------------------------------------*/
 
-/* Tablets e telas maiores */
-@media (min-width: 768px) {
+.footer__titulo {
+    padding: 20px;
+    color: #a8a2a2;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 100px;
+}
+
+.icones__footer--teste {
+    width: 40px;
+}
+
+.container__footer--icones {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+
+
+
+/* Telas mobile */
+@media (min-width: 328px) {
+
+    /* Aqui você pode ajustar ainda mais o design para telas mobile */
     .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecalho__logo {
-        max-width: 100px;
-    }
-
-    .cabecalho__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacao__lista {
+        width: 1136px;
         display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+        padding: 1rem;
+        background-color: write;
+        margin: auto;
+        gap: 9px;
+        align-items: center;
+        justify-content: flex-start;
     }
 
-    .navegacao__elemento a {
-        font-size: 1rem;
-    }
-}
-
-/* Telas grandes */
-@media (min-width: 1024px) {
-
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
-    .cabecalho__titulo {
+    .abecalho__titulo {
         font-size: 1.8rem;
     }
 
     .navegacao__elemento a {
         font-size: 1.1rem;
     }
+
 }
