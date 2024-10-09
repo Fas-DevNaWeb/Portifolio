@@ -424,32 +424,3 @@ h4 {
     justify-content: center;
     gap: 32px;
 }
-
-
-
-
-
-/* Telas mobile */
-@media (min-width: 328px) {
-
-    /* Aqui você pode ajustar ainda mais o design para telas mobile */
-    .cabecalho {
-        width: 1136px;
-        display: flex;
-        padding: 1rem;
-        background-color: write;
-        margin: auto;
-        gap: 9px;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .abecalho__titulo {
-        font-size: 1.8rem;
-    }
-
-    .navegacao__elemento a {
-        font-size: 1.1rem;
-    }
-
-}
